@@ -6,12 +6,14 @@ body {
     color: #333;
     background: rgb(255, 255, 255) url('images/background.png') no-repeat center top 500px fixed;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-    background: #0078D7;
-    color: white;
-    padding: 1rem 0;
+    color: rgb(0, 0, 0);
+    padding: 0.01rem 0;
     text-align: center;
 }
 
@@ -39,6 +41,7 @@ nav ul li a {
 }
 
 main {
+    flex: 1;
     padding: 2rem;
     max-width: 900px;
     margin: 0 auto;
@@ -59,9 +62,12 @@ main {
 }
 
 footer {
-    background: #f4f4f4;
+    background: rgba(244, 244, 244, 0.8); /* Reduced transparency with rgba */
     color: #333;
     text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
+    padding: 0.1rem 0;
+    margin-top: auto;
+    width: 100%; /* Reduced width */
+    margin: 2rem auto 0; /* Centered the footer with margin adjustments */
+    border-radius: 10px; /* Optional: Add rounded corners for aesthetics */
 }
